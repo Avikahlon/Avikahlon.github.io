@@ -3,9 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('contactBtn');
     const span = document.getElementsByClassName('close')[0];
     const form = document.getElementById('contactForm');
+    const resumeBtn = document.getElementById('b1');
+    const linkedinBtn = document.getElementById('b2');
 
     btn.onclick = function() {
         modal.style.display = "block";
+    }
+
+    resumeBtn.onclick = function() {
+        // Replace with your actual resume PDF URL
+        window.open('path/to/your/resume.pdf', '_blank');
+    }
+
+    linkedinBtn.onclick = function() {
+        // Replace with your actual LinkedIn profile URL
+        window.open('https://www.linkedin.com/in/', '_blank');
     }
 
     span.onclick = function() {
