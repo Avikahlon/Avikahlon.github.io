@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     resumeBtn.onclick = function() {
-        // Replace with your actual resume PDF URL
         window.open('path/to/your/resume.pdf', '_blank');
     }
 
     linkedinBtn.onclick = function() {
-        // Replace with your actual LinkedIn profile URL
         window.open('https://www.linkedin.com/in/', '_blank');
     }
 

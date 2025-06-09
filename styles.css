@@ -11,7 +11,6 @@
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    /* padding: 0.5rem 1rem; */
     transition: color 0.3s ease;
     flex: 1;
     text-align: left;
@@ -99,7 +98,7 @@ form button:hover {
     padding: 1rem 2rem;
 }
 
-.b1 {
+.button {
     padding: 10px 20px;
     background-color: #ddd;
     color: black;
@@ -108,7 +107,7 @@ form button:hover {
     transition: background-color 0.3s ease;
 }
 
-.b1:hover {
+.button:hover {
     background-color: #333;
 }
 
@@ -125,6 +124,14 @@ form button:hover {
     border-radius: 15px;
     font-size: 0.875rem;
     color: #161616;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tech_badge:hover {
+    background: #4CAF50;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .tech_badge svg {
@@ -175,4 +182,17 @@ form button:hover {
     height: 200px;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Important: contains the zoomed image */
 }
