@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     linkedinBtn.onclick = function() {
-        window.open('https://www.linkedin.com/in/', '_blank');
+        window.open('https://www.linkedin.com/in/abhijeet-singh-a14827236/', '_blank');
     }
 
     span.onclick = function() {
