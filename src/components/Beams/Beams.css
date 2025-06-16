@@ -1,0 +1,19 @@
+.beams-background {
+  position: fixed; /* or absolute if inside a wrapper */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it to the back */
+  pointer-events: none; /* Let clicks pass through */
+}
+
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
