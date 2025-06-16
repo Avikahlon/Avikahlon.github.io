@@ -4,13 +4,8 @@
   "description": "A personal portfolio website currently under construction",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Avikahlon/Avikahlon.github.io.git"
