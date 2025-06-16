@@ -3,6 +3,8 @@ import Navbar from '../../components/Navbar/navbar';
 import SkillCard from '../../components/Skillcard/Skillcard';
 import './skills_styles.css';
 import { SkillIcons } from '../../components/icons/Icons';
+import ShinyText from '../../components/ShinyText/ShinyText';
+import StarBorder from '../../components/StarBorder/StarBorder';
 
 const Skills = () => {
   return (
@@ -10,7 +12,7 @@ const Skills = () => {
         <Navbar />
         <div className="skills_container">
             <div className="skill_category">
-                <h3 className="category_title">Programming & Scripting</h3>
+                <ShinyText text="Programming & Scripting" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                     name="Python"
@@ -41,7 +43,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Data Analysis & Visualization</h3>
+                <ShinyText text="Data Analysis & Visualization" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="Pandas"
@@ -82,7 +84,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Databases</h3>
+                <ShinyText text="Databases" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="MySQL"
@@ -98,7 +100,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Machine Learning & AI</h3>
+                <ShinyText text="Machine Learning & AI" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="Scikit-learn"
@@ -124,7 +126,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Web Development</h3>
+                <ShinyText text="Web Development" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="React"
@@ -160,7 +162,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Cloud & Dev Ops</h3>
+                <ShinyText text="Cloud & Dev Ops" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="AWS"
@@ -181,7 +183,7 @@ const Skills = () => {
             </div>
 
             <div className="skill_category">
-                <h3 className="category_title">Tools & Collaboration</h3>
+                <ShinyText text="Tools & Collaboration" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                         name="Git"

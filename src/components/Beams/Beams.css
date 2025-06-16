@@ -6,6 +6,7 @@
   height: 100%;
   z-index: -1; /* Send it to the back */
   pointer-events: none; /* Let clicks pass through */
+  will-change: transform;
 }
 
 .home-container {
