@@ -4,11 +4,10 @@ import SkillCard from '../../components/Skillcard/Skillcard';
 import './skills_styles.css';
 import { SkillIcons } from '../../components/icons/Icons';
 import ShinyText from '../../components/ShinyText/ShinyText';
-import StarBorder from '../../components/StarBorder/StarBorder';
 
 const Skills = () => {
   return (
-    <div className="skills-container">
+    <div className="skills-container">       
         <Navbar />
         <div className="skills_container">
             <div className="skill_category">

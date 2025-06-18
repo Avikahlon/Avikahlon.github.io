@@ -32,8 +32,8 @@ const Navbar = () => {
         {
             icon: <HiOutlineMail size={36} color="grey" />,
             label: "Contact Me",
-            href: "#contact",
-            onClick: () => handleClick("#contact"),
+            href: "/contact",
+            onClick: () => handleClick("/contact"),
         },
     ];
 

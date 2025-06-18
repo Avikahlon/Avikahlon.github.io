@@ -2,20 +2,18 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar/navbar';
 import Beams from '../../components/Beams/Beams';
 import MainContent from '../../components/Main/MainContent';
-import ContactFooter from '../../components/footer/ContactFooter';
+import ContactPage from '../footer/ContactPage';
 
 const Home = ({ fadeInComplete }) => {
   const [beamsStarted, setBeamsStarted] = useState(false);
   const [textAnimationStarted, setTextAnimationStarted] = useState(false);
 
-  // Start beams after fade-in completes
   useEffect(() => {
     if (fadeInComplete) {
       setBeamsStarted(true);
     }
   }, [fadeInComplete]);
 
-  // Callback from beams when beams animation finishes
   const handleBeamsComplete = () => {
     setTextAnimationStarted(true);
   };
@@ -32,17 +30,18 @@ const Home = ({ fadeInComplete }) => {
           noiseIntensity={1.75}
           scale={0.2}
           rotation={10}
-          running={beamsStarted} // Pass prop to control running
-          onComplete={handleBeamsComplete} // Notify when beams done
+          running={beamsStarted}
+          onComplete={handleBeamsComplete}
         />
       </div>
 
       <div className="main-content">
         <Navbar />
         <MainContent animate={textAnimationStarted} />
-        <ContactFooter />
+        
       </div>
     </div>
+    
   );
 };
 
