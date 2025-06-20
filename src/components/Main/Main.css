@@ -1,5 +1,14 @@
 .main-content {
-  
+  display: block;
+}
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80rem;
+  padding-right: 8rem;
+  padding-top: -170rem;
 }
 
 .left-content {
@@ -7,6 +16,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  left: 2rem;
+  padding-left: 8rem;
 }
 
 .main-text {
@@ -18,17 +29,14 @@
 .about {
   font-size: 1.5rem;
   color: #ffffff;
+  
 }
 
-.right-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .about-text {
   font-size: 1.5rem;
   color: #ffffff;
+  
 }
 
 ul[aria-label="Social media"] {

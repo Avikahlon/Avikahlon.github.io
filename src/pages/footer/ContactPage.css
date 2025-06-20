@@ -38,7 +38,7 @@
   align-items: center;
   font-size: 1.8rem;
   gap: 10px;
-  color: #b8b1a6;
+  color: #90e0ef;
   font-weight: 600;
   margin-top: -40px;
   
@@ -86,7 +86,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #d3b88c;
+  border-color: #274c77;
   outline: none;
 }
 
@@ -96,7 +96,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #b8b1a6;
+  background-color: #90e0ef;
   color: #0e0e10;
   padding: 14px 20px;
   font-size: 1rem;
@@ -111,6 +111,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #c3a979;
-  box-shadow: 0 0 12px #d3b88c;
+  background-color: #274c77;
+  box-shadow: 0 0 12px #274c77;
 }

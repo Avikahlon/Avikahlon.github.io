@@ -18,7 +18,7 @@ const ContactPage = () => {
             rows={9}
             columns={9}
             containerSize="60vmin"
-            lineColor="tomato"
+            lineColor="#90e0ef"
             lineWidth="0.8vmin"
             lineHeight="5vmin"
             baseAngle={0}

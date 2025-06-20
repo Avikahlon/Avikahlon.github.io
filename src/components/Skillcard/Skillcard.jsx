@@ -14,7 +14,7 @@ const SkillCard = ({ name, description, Icon }) => {
         glareOpacity={0.3}
         glareAngle={-30}
         glareSize={300}
-        transitionDuration={1200}
+        transitionDuration={1000}
         playOnce={false}
         > 
         <div className="icon">
