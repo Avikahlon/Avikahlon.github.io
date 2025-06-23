@@ -38,7 +38,6 @@ const Home = ({ fadeInComplete }) => {
       <div className="main-content">
         <Navbar />
         <MainContent animate={textAnimationStarted} />
-        
       </div>
     </div>
     

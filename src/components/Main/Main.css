@@ -1,53 +1,51 @@
-.main-content {
-  display: block;
-}
-
-.right-content {
+.text {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 80rem;
-  padding-right: 8rem;
-  padding-top: -170rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 2rem;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 4vw;
 }
 
-.left-content {
+.left-content,
+.right-content {
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  left: 2rem;
-  padding-left: 8rem;
+  text-wrap: pretty;
+  min-width: 300px;
 }
 
 .main-text {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #ffffff;
 }
 
-.about {
-  font-size: 1.5rem;
+.about{
+  font-size: 1.25rem;
   color: #ffffff;
-  
+  margin-top: -3rem;
 }
-
 
 .about-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #ffffff;
+  margin-top: 1rem;
   
 }
 
+
 ul[aria-label="Social media"] {
-    position: fixed;
+    position: static;
     bottom: 2rem;
     left: 2rem;
     display: flex;
     gap: 1rem;
     list-style: none;
     z-index: 100;
-    padding-left: 8rem;
+    padding-left: 20vw;
 }
 
 ul[aria-label="Social media"] li a {
@@ -75,4 +73,48 @@ ul[aria-label="Social media"] svg {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .text {
+    flex-direction: column;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10vw;
+    gap: 1.5rem;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .main-text {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .about,
+  .about-text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  ul[aria-label="Social media"] {
+    position: static;
+    justify-content: center;
+    padding: 2rem 0 0;
+  }
+
+  ul[aria-label="Social media"] li {
+    margin-right: 1rem;
+  }
+
+  ul[aria-label="Social media"] svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
