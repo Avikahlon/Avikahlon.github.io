@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working on **Full Stack Stats app**
 
-- 🌱 I’m currently learning **React**
+- 🌱 I’m currently learning **React**,**Next.js**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
