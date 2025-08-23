@@ -1,60 +1,43 @@
-.text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 2rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  padding-top: 4vw;
+.main-content{
+  position: relative;
+  --minHeight: 70vh;
+  min-height: var(--minHeight);
+  width:100%;
+  position:relative;
+  margin-top: auto;
 }
 
-.left-content,
-.right-content {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  text-wrap: pretty;
-  min-width: 300px;
-}
-
-.main-text {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.about{
-  font-size: 1.25rem;
-  color: #ffffff;
-  margin-top: -3rem;
-}
-
-.about-text {
-  font-size: 1.25rem;
-  color: #ffffff;
-  margin-top: 1rem;
-  
-}
-
-
-ul[aria-label="Social media"] {
-    position: static;
-    bottom: 2rem;
-    left: 2rem;
+.footer{
+    position: absolute;
+    bottom: 0;
     display: flex;
     gap: 1rem;
     list-style: none;
     z-index: 100;
-    padding-left: 20vw;
+}
+
+.main-text {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #0d1321;
+}
+
+ul[aria-label="Social media"] {
+    position: static;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    z-index: 100;
 }
 
 ul[aria-label="Social media"] li a {
-    color: #ffffff;
+    color: #0d1321;
     transition: all 0.3s ease;
 }
 
 ul[aria-label="Social media"] li a:hover {
-    color: #8b8c89;
+    color: #004e98;
     transform: scale(1.1);
 }
 
@@ -85,22 +68,9 @@ ul[aria-label="Social media"] svg {
     gap: 1.5rem;
   }
 
-  .left-content,
-  .right-content {
-    flex: 1 1 100%;
-    min-width: unset;
-  }
-
   .main-text {
     font-size: 2.25rem;
     text-align: center;
-  }
-
-  .about,
-  .about-text {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
   }
 
   ul[aria-label="Social media"] {

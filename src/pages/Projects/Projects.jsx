@@ -2,10 +2,9 @@ import React from "react";
 import "./Projects.css";
 import Navbar from "../../components/Navbar/navbar";
 import requestForm from '../../images/requestForm.png';
-// import dashboard from '../../images/dashboard.png';
-// import dashboard2 from '../../images/dashboard2.png';
+import dashboard from '../../images/dashboard.png';
+import dashboard2 from '../../images/dashboard2.png';
 import idv1 from '../../images/idv1.png';
-// import idv2 from '../../images/idv2.png';
 import { SkillIcons } from '../../components/icons/Icons';
 import SpotlightCard from "../../components/SpotlightCard/SpotlightCard";
 
