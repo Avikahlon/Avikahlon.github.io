@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .main-content{
   position: relative;
   --minHeight: 70vh;
@@ -21,6 +26,11 @@
   font-weight: bold;
   margin: 0.5rem 0;
   color: #0d1321;
+  padding-left: 2.5rem;
+}
+
+.main-object{
+  padding-right: 2.5rem;
 }
 
 ul[aria-label="Social media"] {

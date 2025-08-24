@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .home-container {
   display: flex;
   justify-content: center; 
@@ -16,7 +21,7 @@
   background-color: #F9F7F7;
   color: black;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: start;
 
   display: flex;

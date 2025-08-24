@@ -3,6 +3,41 @@ import './Main.css';
 
 const MainContent = () => {
 
+  const items = [
+    {
+      id: "1",
+      img: "../../Images/image0.jpeg",
+      url: "",
+      height: 40,
+    },
+    {
+      id: "2",
+      img: "../../Images/image1.jpeg",
+      height: 25,
+    },
+    {
+      id: "3",
+      img: "../../Images/image2.jpeg",
+      height: 60,
+    },
+    {
+      id: "4",
+      img: "../../Images/image3.jpeg",
+      height: 60,
+    },
+    {
+      id: "5",
+      img: "../../Images/image4.jpeg",
+      height: 60,
+    },
+    {
+      id: "6",
+      img: "../../Images/image5.jpeg",
+      height: 60,
+    },
+    
+  ];
+
   return (
     <div className='main-content'>
       <div className="text">
@@ -12,6 +47,9 @@ const MainContent = () => {
           Software Developer,<br/>
           Data Analyst
         </h1>
+      </div>
+      <div className='main-object'>
+        
       </div>
       <div className='footer'>
         <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
