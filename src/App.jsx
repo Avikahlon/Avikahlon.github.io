@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Skills from './pages/Skills/Skills';
 import ContactPage from './pages/footer/ContactPage';
 import Projects from './pages/Projects/Projects';
+import './App.css';
 
 function AnimatedRoutes() {
   const location = useLocation();

@@ -11,7 +11,7 @@ const Skills = () => {
         <Navbar />
         <div className="skills_container">
             <div className="skill_category">
-                <ShinyText text="Programming & Scripting" disabled={false} speed={3} className='category_title' />
+                <ShinyText text="Programming" disabled={false} speed={3} className='category_title' />
                 <div className="skills_grid">
                     <SkillCard 
                     name="Python"

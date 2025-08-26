@@ -11,11 +11,11 @@ import SpotlightCard from "../../components/SpotlightCard/SpotlightCard";
 const Projects = () => {
   return (
     
-      <div className="project_content">
-        <Navbar />
-        <div className="projects-grid">
-    
-        <SpotlightCard className="project-card" spotlightColor="#ccd5ae">
+    <div className="project_content">
+      <Navbar />
+      <div className="projects-grid">
+  
+        <SpotlightCard className="project-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <img src={requestForm} alt="Project 1" />
             <div className="project_desc">
               <h3>Software Request System</h3>
@@ -38,14 +38,14 @@ const Projects = () => {
               </div>
             </div>
         </SpotlightCard>
-        
+      
 
         <SpotlightCard className="project-card" spotlightColor="rgba(0, 229, 255, 0.2)">
             <img src={idv1} alt="Project 2" />
             <div className="project_desc">
               <h3>Interactive Data Visualization System</h3>
               <p>
-               A Python-based Interactive Data Visualization System that analyzes and visualizes open-source Australian employment and unemployment data. The platform offers dynamic, user-friendly visualizations to uncover trends, patterns, and insights across states, industries, and time periods.
+              A Python-based Interactive Data Visualization System that analyzes and visualizes open-source Australian employment and unemployment data. The platform offers dynamic, user-friendly visualizations to uncover trends, patterns, and insights across states, industries, and time periods.
               </p>
               <div className="tech_used">
                 <span className="tech_badge">
@@ -73,7 +73,7 @@ const Projects = () => {
             <div className="project_desc">
               <h3>Emotion Recognition System</h3>
               <p>
-               Designed and developed a real-time Emotion Recognition desktop application aimed at supporting children with disabilities by recognizing and responding to their emotional states. The application includes role-based access for both users (e.g., educators or caregivers) and administrators, along with an interactive dashboard for monitoring emotion trends and user activity.
+              Designed and developed a real-time Emotion Recognition desktop application aimed at supporting children with disabilities by recognizing and responding to their emotional states. The application includes role-based access for both users (e.g., educators or caregivers) and administrators, along with an interactive dashboard for monitoring emotion trends and user activity.
               </p>
               <div className="tech_used">
                 <span className="tech_badge">
@@ -109,7 +109,7 @@ const Projects = () => {
             <div className="project_desc">
               <h3>Full-stack Web App</h3>
               <p>
-               a full-stack web application that delivers dynamic, interactive insights into professional League of Legends gameplay. It features a custom Python web scraper that collects live player and match statistics, stored in a PostgreSQL database. The backend is powered by Flask, which exposes a RESTful API to serve data to a fast and responsive React + Vite frontend.
+              a full-stack web application that delivers dynamic, interactive insights into professional League of Legends gameplay. It features a custom Python web scraper that collects live player and match statistics, stored in a PostgreSQL database. The backend is powered by Flask, which exposes a RESTful API to serve data to a fast and responsive React + Vite frontend.
               </p>
               <div className="tech_used">
                 <span className="tech_badge">
@@ -135,8 +135,8 @@ const Projects = () => {
               </div>
             </div>
           </SpotlightCard>
-        </div>
       </div>
+    </div>
   );
 };
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import GooeyNav from '../GooeyNav/GooeyNav';
 import Dock from '../Dock/Dock';
 import { IoHomeOutline, IoFolderOpenOutline } from "react-icons/io5";
 import { CgCodeSlash } from "react-icons/cg";
@@ -37,6 +35,7 @@ const Navbar = () => {
         },
     ];
 
+
   const handleClick = (href) => {
     if (href.startsWith('/')) {
       navigate(href);
@@ -47,11 +46,11 @@ const Navbar = () => {
 
   return (
     <Dock 
-    items={items}
-    panelHeight={60}
-    baseItemSize={55}
-    magnification={80}
-  />
+      items={items}
+      panelHeight={60}
+      baseItemSize={55}
+      magnification={80}
+    />
   );
 };
 
