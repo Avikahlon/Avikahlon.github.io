@@ -1,86 +1,65 @@
-import React from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Skills from './pages/Skills/Skills';
-import ContactPage from './pages/footer/ContactPage';
-import Projects from './pages/Projects/Projects';
-import './App.css';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Navbar from './Navbar';
+import Skills from './Skills';
+import Projects from './Projects';
+import Footer from './Footer';
 
-function AnimatedRoutes() {
-  const location = useLocation();
-  const [fadeInComplete, setFadeInComplete] = React.useState(false);
-
+const HeaderSection = () => {
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route
-          path="/"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              style={{ position: 'absolute', width: '100%' }}
-            >
-              <Home />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/skills"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              style={{ position: 'absolute', width: '100%' }}
-            >
-              <Skills />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              style={{ position: 'absolute', width: '100%' }}
-            >
-              <Projects />
-            </motion.div>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              style={{ position: 'absolute', width: '100%' }}
-            >
-              <ContactPage />
-            </motion.div>
-          }
-        />
-      </Routes>
-    </AnimatePresence>
+    <div className="header-section">
+      <Navbar />
+    </div>
   );
+}
+
+const TopSection = () => {
+    return (
+        <div id="hero" className="top-section text-center py-20 md:py-32 max-w-4xl mx-auto px-4">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight text-white">
+                Hello,<br />
+                I'm Abhijeet.<br />
+                Software Developer,<br/>
+                Data Analyst
+            </h1>
+        </div>
+    );
+}
+
+const ProjectsSection = () => {
+    return (
+        <div id="projects" className="projects-section pt-16 pb-20 border-t border-gray-800">
+            <div className="projects-title font-bold text-center text-white mb-12">
+              <h2>Projects</h2>
+            </div>
+            <Projects />
+        </div>
+    );
+}
+
+const SkillsSection = () => {
+    return (
+        <div id="skills" className="skills-section pt-16 pb-20 border-t border-gray-800">
+            <div className="skills-title font-bold text-center text-white mb-12">
+              <h2>Skills</h2>
+            </div>
+            <Skills />
+        </div>
+    );
 }
 
 function App() {
   return (
-    <div className="app" style={{ position: 'relative' }}>
-      <Router>
-        <AnimatedRoutes />
-      </Router>
+    <div className="app-global-style" style={{ position: 'relative' }}>
+      <div className = "main-box">
+        <HeaderSection />
+        <TopSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <Footer/>
+      </div>
     </div>
   );
 }

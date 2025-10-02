@@ -1,4 +1,50 @@
-.app{
-    max-width: 1500px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.app-global-style {
+    background-color: #000000; /* Dark charcoal/slate background */
+    color: #f3f4f6; /* Light gray text color for contrast */
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Space Mono", monospace;
+    line-height: 1.6;
 }
+
+.projects-title{
+  border-bottom: 2px solid #ffffff;
+}
+
+.skills-title{
+  border-bottom: 2px solid #ffffff;
+}
+
+.main-box {
+  border: 2px solid #ffffff; /* White border */
+  width: 90vw;
+  padding: 0; /* Content handles its own padding */
+  background-color: #000000;
+  box-sizing: border-box;
+  margin: 1.5rem auto;
+}
+
+.top-section {
+  border-bottom: 2px solid #ffffff;
+}
+
+.projects-section{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 1rem;
+}
+
+.skills-section{
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 40px;
+}
+
+/* Utility classes for consistency with Tailwind approach */
+.text-white { color: #ffffff; }
+.text-indigo-400 { color: #818cf8; }
+.font-extrabold { font-weight: 800; }
+.text-center { text-align: center; }
+.mb-12 { margin-bottom: 3rem; }
