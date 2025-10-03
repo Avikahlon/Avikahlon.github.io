@@ -1,7 +1,8 @@
 import React from 'react';
 import './Projects.css';
+import SR1 from "../images/SR1.png";
+import IDV1 from "../images/idv1.png";
 
-// --- Project Data Structure ---
 const projectData = [
     {
         date: "Feb 2025",
@@ -9,7 +10,7 @@ const projectData = [
         link: "#",
         teaser: "During my professional practice project at university, I designed a Software Request System that collects software requirements through a Power Apps form and compiled findings via a Power BI dashboard, streamlining the software request process.",
         tech: ["Power BI", "Power Apps", "Python"],
-        image: "images/SR1.png",
+        image: SR1,
     },
     {
         date: "Sep 2024",
@@ -17,7 +18,7 @@ const projectData = [
         link: "https://australianemployment.streamlit.app/",
         teaser: "A Python-based Interactive Data Visualization System that analyzes and visualizes open-source Australian employment and unemployment data using libraries like Streamlit, Plotly, and Matplotlib.",
         tech: ["Pandas", "Streamlit", "Plotly", "Matplotlib"],
-        image: "images/idv1.png",
+        image: IDV1,
     },
     {
         date: "Jan 2024",
