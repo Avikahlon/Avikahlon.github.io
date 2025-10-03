@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
-import SR1 from "../images/SR1.png";
-import IDV1 from "../images/idv1.png";
+import SR1 from "../assets/SR1.png";
+import IDV1 from "../assets/idv1.png";
 
 const projectData = [
     {
