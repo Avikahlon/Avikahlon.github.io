@@ -9,7 +9,7 @@ const projectData = [
         link: "#",
         teaser: "During my professional practice project at university, I designed a Software Request System that collects software requirements through a Power Apps form and compiled findings via a Power BI dashboard, streamlining the software request process.",
         tech: ["Power BI", "Power Apps", "Python"],
-        image: "src/images/SR1.png",
+        image: "images/SR1.png",
     },
     {
         date: "Sep 2024",
@@ -17,7 +17,7 @@ const projectData = [
         link: "https://australianemployment.streamlit.app/",
         teaser: "A Python-based Interactive Data Visualization System that analyzes and visualizes open-source Australian employment and unemployment data using libraries like Streamlit, Plotly, and Matplotlib.",
         tech: ["Pandas", "Streamlit", "Plotly", "Matplotlib"],
-        image: "src/images/idv1.png",
+        image: "images/idv1.png",
     },
     {
         date: "Jan 2024",
