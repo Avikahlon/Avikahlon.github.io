@@ -31,7 +31,7 @@ const projectData = [
     {
         date: "Jul 2025",
         title: "Full-stack Web App",
-        link: "#",
+        link: "https://github.com/Avikahlon/LOL-Stats-Tracker",
         teaser: "A full-stack web application that delivers dynamic, interactive insights into professional League of Legends gameplay using a Python scraper, PostgreSQL, Flask, and React.",
         tech: ["Python", "React", "PostgreSQL", "Flask"],
         image: "https://placehold.co/350x200/ff50ff/ffffff?text=Full-Stack+Web",

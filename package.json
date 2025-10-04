@@ -14,6 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Avikahlon/Avikahlon.github.io"
   },
+  "homepage": "https://avikahlon.github.io",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
